@@ -1,0 +1,17 @@
+\chapter{Introduzione}\label{ch:introduzione}
+
+Negli ultimi anni siamo andati verso l'automatizzazione di sempre pi\`u compiti, dai pi\`u semplici ai pi\`u complessi e con vari gradi di successo. Alcuni di questi compiti vengono lasciati ai computer perch\'e troppo complessi per gli umani; altri invece risultano elementari alle persone, ma si incontrano difficolt\`a nell'implementarli in maniera automatica. Si potrebbe quindi pensare che sia illogico cercare di automatizzare qualcosa che le persone trovano naturale, ma si sbaglierebbe. Infatti i computer hanno numerosi vantaggi rispetto alle persone: sono pi\`u veloci per le operazioni basilari e il loro tempo ha meno valore.
+
+Una delle operazioni che alle persone riesce in maniera naturale \`e la lettura di documenti a partire da immagini degli stessi. Per un programma questo \`e un compito molto difficile, basti pensare ai CAPTCHA che si trovavano maggiormente fino a pochi anni fa.
+
+Per questo progetto lo scopo non \`e la lettura, ma solamente il riconoscimento di alcuni grafemi in immagini di manoscritti medievali. Un grafema \`e un segno grafico a cui \`e associata una lettera; questa associazione non \`e biunivoca, infatti pi\`u grafemi possono corrispondere alla stessa lettera se quella lettera si pu\`o scrivere in pi\`u modi.
+
+Questo pu\`o risultare utile perch\'e, conoscendo l'evoluzione della calligrafia nel corso dei secoli, il diverso stile di scrittura di una lettera ci pu\`o aiutare nella datazione dei manoscritti.
+
+Il programma \`e scritto in \emph{Python} e le librerie che sono state usate sono:
+\emph{OpenCV}\cite{opencv_library} per le operazioni sulle immagini;
+\emph{numpy}\cite{oliphant2006guide, van2011numpy} per le operazioni sulle array;
+\emph{matplotlib}\cite{Hunter:2007} per visualizzare alcuni grafici;
+\emph{scipy}\cite{2020SciPy-NMeth} per alcune operazioni particolari.
+
+Ci\`o che faremo per raggiungere il nostro obiettivo \`e, a partire da un grafema di riferimento, estrarre dal testo quelli simili. Per l'estrazione dei caratteri si useranno proiezioni ortogonali e componenti connesse, e per valutare la somiglianza, invece, sar\`a impiegato l'indice di Jaccard. Vedremo poi come poter introdurre dell'interattivit\`a nel programma facendo scegliere all'utente se una determinata immagine rappresenta il grafema desiderato. Per tutte queste modalit\`a saranno fatti degli esperimenti per valutarne l'efficienza.

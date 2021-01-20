@@ -1,0 +1,15 @@
+\chapter{Conclusioni}\label{ch:conclusioni}
+
+Quello che abbiamo fatto \`e stato, a partire da digitalizzazioni di documenti manoscritti medievali, trovare un metodo per l'estrazione di alcuni grafemi che ci interessavano.
+
+Prima di tutto abbiamo binarizzato le immagini per rendere pi\`u semplici le operazioni successive. Dopodich\'e abbiamo utilizzato metodi basati su proiezioni orizzontali e verticali per suddividere il documento nelle righe e nei caratteri che lo compongono.
+
+Una volta isolate le varie immagini dei caratteri e estratti da essi i grafemi mediante lo studio delle componenti connesse, siamo passati a confrontarle con dei modelli estratti manualmente in precedenza per trovare quelle che rappresentano ciascuno dei grafemi che ci interessano.
+
+Il confronto avviene mediante vari passaggi successivi. Inizialmente si trasformano le immagini per renderle tutte delle stesse dimensioni. Questo avviene secondo varie modalit\`a che verranno confrontate fra di loro. Infine si confrontano le immagini tramite l'indice di Jaccard.
+
+Per confrontare la bont\`a delle varie modalit\`a si usano degli scan gi\`a analizzati manualmente. I risultati degli esperimenti sono riportati nel capitolo \ref{ch:experiments}, da cui si vede che tutte le modalit\`a si comportano in maniera molto simile, con piccole differenze.
+
+Come ultima cosa si \`e usata un'interfaccia interattiva per rendere il programma migliore in situazioni in cui non basta un unico modello per analizzare tutto il documento. Questo \`e stato descritto nel capitolo \ref{ch:interactivity}, in cui si pu\`o vedere il miglioramento considerevole rispetto alla modalit\`a non interattiva.
+
+In conclusione, il programma risulta utile per la ricerca dei grafemi che ci interessavano e si rivela anche versatile tramite l'uso della modalit\`a interattiva, nonostante l'apparente semplicit\`a delle tecniche utilizzate.
